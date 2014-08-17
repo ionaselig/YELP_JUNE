@@ -5,16 +5,32 @@ CRUD principles and then implementing a user management system using the gem Dev
 
 * Ruby version:  2.1.2
 
-* System dependencies
+Technologies used:
 
-* Configuration
+Ruby on Rails
+JavaScript
+jQuery
+RSpec & Capybara
+Postgres DB
+Poltergeist for testing JavaScript
+Devise gem for user management.
 
-* Database creation
 
-* Database initialization
 
-* How to run the test suite
+Functionality:
 
-* Deployment instructions
+Home page displays a list of restaurants and associated reviews
+Users can created a profile and log in to ths site
+Logged in users can submit restaurants for review
+Logged in users can review a submitted restaurant
+Average user rating is displayed for each restaurant using the star system
+Validation ensures users cannot post multiple reviews, review restaurants they have created or edit/delete restuarants created by other users
+Users can give a review a thumbs up or thumbs down
+Reviews are displayed based on their ranking derived from thumbs up vs down
+Validations ensure users can give the same review multiple thumbs up/down
 
+
+bin/rails server in CLI will open the app on port 3000
+rspec in CLI from the root directory will run the test suite
+bin/rake db:seed will seed the database with sample entries to demonstrate functionality
 
